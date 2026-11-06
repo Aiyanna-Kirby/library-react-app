@@ -1,3 +1,4 @@
+import "./index.css";
 import Nav from "./components/Nav.jsx";
 
 function App() {
