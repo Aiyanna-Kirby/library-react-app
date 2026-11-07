@@ -4,6 +4,7 @@ import Landing from "./components/Landing.jsx";
 import Highlights from "./components/Highlights.jsx";
 import Featured from "./components/Featured.jsx";
 import Discounted from "./components/Discounted.jsx";
+import Explore from "./components/Explore.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Highlights></Highlights>
       <Featured></Featured>
       <Discounted></Discounted>
+      <Explore></Explore>
     </div>
   );
 }
