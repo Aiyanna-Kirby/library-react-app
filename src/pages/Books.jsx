@@ -1,6 +1,6 @@
 import React from "react";
-import Book from "../components/ui/Book.jsx";
 import { books } from "../data.js";
+import Book from "../components/ui/Book.jsx";
 
 const Books = ({ book }) => {
   return (
@@ -22,7 +22,7 @@ const Books = ({ book }) => {
               </div>
               <div className="books">
                 {books.map((book) => (
-                  <Book books={book} key={book.id} />
+                  <Book book={book} key={book.id} />
                 ))}
               </div>
             </div>
