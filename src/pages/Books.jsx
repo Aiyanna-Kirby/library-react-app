@@ -1,7 +1,8 @@
 import React from "react";
-import { books } from "../data.js"
+import Book from "../components/ui/Book.jsx";
+import { books } from "../data.js";
 
-const Books = () => {
+const Books = ({ book }) => {
   return (
     <div id="books__body">
       <main id="books__main">
@@ -20,8 +21,8 @@ const Books = () => {
                 </select>
               </div>
               <div className="books">
-                {books.map((books) => (
-                  <Books books={books} key={books.id} />
+                {books.map((book) => (
+                  <Book books={book} key={book.id} />
                 ))}
               </div>
             </div>
