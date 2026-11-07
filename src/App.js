@@ -5,6 +5,7 @@ import Highlights from "./components/Highlights.jsx";
 import Featured from "./components/Featured.jsx";
 import Discounted from "./components/Discounted.jsx";
 import Explore from "./components/Explore.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Featured></Featured>
       <Discounted></Discounted>
       <Explore></Explore>
+      <Footer></Footer>
     </div>
   );
 }
