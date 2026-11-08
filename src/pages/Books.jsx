@@ -3,9 +3,9 @@ import { books } from "../data.js";
 import Book from "../components/ui/Book.jsx";
 
 const Books = ({ books: initialBooks }) => {
-  const [book, setBooks] = useState(initialBooks);
+  const [book, setBooks] = useState(books);
 
-  function filterBooks() {
+  function filterBooks(filter) {
     console.log(filter);
 
     if (filter === "LOW_TO_HIGH") {
@@ -47,8 +47,8 @@ const Books = ({ books: initialBooks }) => {
                 </select>
               </div>
               <div className="books">
-                {books.map((book) => (
-                  <Book book={book} key={book.id} />
+                {book.map((item) => (
+                  <Book book={item} key={item.id} />
                 ))}
               </div>
             </div>

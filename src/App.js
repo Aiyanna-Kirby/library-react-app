@@ -13,10 +13,7 @@ function App() {
         <Nav></Nav>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
-          <Route
-            path="/books"
-            render={() => <Books books={books}></Books>}
-          ></Route>
+          <Route path="/books" element={<Books books={books} />}></Route>
           {/* <Route path="/books/:id" element={<BookInfo books={books} addToCart={addToCart} cart={cart}></BookInfo>}></Route>
         <Route path="/cart" element={<cart books={books} cart={cart} changeQuantity={changeQuantity}></cart>}></Route> */}
         </Routes>
