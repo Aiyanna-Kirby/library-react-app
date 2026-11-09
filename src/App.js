@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Books from "./pages/Books.jsx";
 import { books } from "./data.js";
+import BookInfo from "./pages/BookInfo.jsx"
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/books" element={<Books books={books} />}></Route>
-          {/* <Route path="/books/:id" element={<BookInfo books={books} addToCart={addToCart} cart={cart}></BookInfo>}></Route>
-        <Route path="/cart" element={<cart books={books} cart={cart} changeQuantity={changeQuantity}></cart>}></Route> */}
+          <Route path="/books/1" element={<BookInfo books={books} />} />
+        {/* <Route path="/cart" element={<cart books={books} cart={cart} changeQuantity={changeQuantity}></cart>}></Route> */}
         </Routes>
         <Footer></Footer>
       </div>
