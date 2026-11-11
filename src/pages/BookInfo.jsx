@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import Rating from "../components/ui/Rating";
 import Price from "../components/ui/Price";
 import Book from "../components/ui/Book";
+import Books from "../data.js";
 
 const BookInfo = ({ books, addToCart, cart }) => {
   const { id } = useParams();
@@ -38,7 +39,7 @@ const BookInfo = ({ books, addToCart, cart }) => {
                 <Rating rating={book.rating}></Rating>
                 <div className="book__selected--price">
                   <Price
-                    originalPrice={book.originalPrice}
+                    originalPrice={books.originalPrice}
                     salePrice={book.salePrice}
                   ></Price>
                 </div>

@@ -29,13 +29,13 @@ function App() {
           <Route path="/books" element={<Books books={books} />}></Route>
           <Route
             path="/books/:id"
-            element={<BookInfo books={books} addToCart={addToCart} />}
-          />
-          <Route
-            path="/cart"
             element={
               <BookInfo books={books} addToCart={addToCart} cart={cart} />
             }
+          />
+          <Route
+            path="/cart"
+            element={<Cart cart={cart} books={books} />}
           ></Route>
         </Routes>
         <Footer></Footer>
